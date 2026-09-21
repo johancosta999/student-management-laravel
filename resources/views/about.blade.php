@@ -1,0 +1,14 @@
+@include('component.head')
+@include('component.navbar')
+
+<div class="conatainer">
+    <div class="row">
+        <div class="col-12">
+            <h2>About Us</h2>
+        </div>
+    </div>
+</div>
+
+
+
+@include('component.script')
