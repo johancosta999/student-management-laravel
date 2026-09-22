@@ -10,8 +10,8 @@ class Student extends Model
         'reg_no',
         'name',
         'address',
-        'DOB',
-        'age',
+        'birth_date',
+        'phone_number',
         'weight'
     ];
 }

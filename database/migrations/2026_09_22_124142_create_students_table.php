@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->id();
-            $table->string('reg_no');
+            $table->string('reg_no')->unique();
             $table->string('name');
             $table->string('address');
-            $table->date('DOB');
-            $table->integer('age');
-            $table->double('weight');
-            $table->timestamps();
+            $table->date('birth_date')->nullable();
+            $table->integer('phone_number');
+            $table->decimal('weight', 5, 2); // e.g. 65.50
+            $table->timestamps(); // created_at & updated_at
         });
     }
 

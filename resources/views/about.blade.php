@@ -1,14 +1,13 @@
-@include('component.head')
-@include('component.navbar')
+@extends('app')
+@push('title')
+    About
+@endpush
 
-<div class="conatainer">
-    <div class="row">
-        <div class="col-12">
-            <h2>About Us</h2>
-        </div>
-    </div>
-</div>
+@push('navbar-title')
+    Sri Lanka
+@endpush
 
-
-
-@include('component.script')
+@section('content')
+    <h1>About Sri Lanka</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus commodi qui eum eos, earum dolorum officia ipsam dignissimos consequuntur, saepe inventore dicta eius illo fugiat reprehenderit consequatur at quod veritatis repellendus? Culpa neque tempora eius maiores adipisci similique, illo velit accusamus doloremque necessitatibus laborum minus obcaecati modi magnam odit facilis cum. Labore repellat suscipit provident quis itaque repudiandae cum aliquam inventore ipsam earum perferendis assumenda dolorum fuga delectus, et, sequi alias ratione incidunt rerum minus! Molestiae consequatur error omnis iste perspiciatis obcaecati, quae eos excepturi, et quisquam, modi officiis? Blanditiis quasi explicabo, commodi dolores perferendis illum magnam eius voluptatem?</p>
+@endsection
